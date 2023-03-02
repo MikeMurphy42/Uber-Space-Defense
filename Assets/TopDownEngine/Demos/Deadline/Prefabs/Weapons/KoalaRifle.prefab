@@ -5064,6 +5064,8 @@ GameObject:
   - component: {fileID: 114137986743622244}
   - component: {fileID: 114345180357598506}
   - component: {fileID: 114251315345146356}
+  - component: {fileID: 8346645428937644484}
+  - component: {fileID: 6190251317876918626}
   m_Layer: 0
   m_Name: KoalaRifle
   m_TagString: Untagged
@@ -5103,10 +5105,10 @@ MonoBehaviour:
   WeaponName: 
   WeaponCurrentlyActive: 1
   InputAuthorized: 1
-  TriggerMode: 1
-  DelayBeforeUse: 0
+  TriggerMode: 0
+  DelayBeforeUse: 0.5
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 0.1
+  TimeBetweenUses: 0.5
   TimeBetweenUsesReleaseInterruption: 1
   UseBurstMode: 0
   BurstLength: 3
@@ -5206,7 +5208,7 @@ MonoBehaviour:
   MinimumAngle: -180
   MaximumAngle: 180
   MinimumMagnitude: 0.2
-  ReticleType: 1
+  ReticleType: 0
   Reticle: {fileID: 1373789777524232, guid: f31b518c2b50cc2479370c46d4485485, type: 3}
   ReticleDistance: 5
   ReticleHeight: 0
@@ -5215,7 +5217,7 @@ MonoBehaviour:
   ReplaceMousePointer: 1
   MouseDeadZoneRadius: 0.5
   DisplayReticle: 1
-  MoveCameraTargetTowardsReticle: 1
+  MoveCameraTargetTowardsReticle: 0
   CameraTargetOffset: 0.3
   CameraTargetMaxDistance: 2
   CameraTargetSpeed: 5
@@ -5235,6 +5237,55 @@ MonoBehaviour:
   BelowThresholdSortingOrder: 1
   AboveThresholdSortingOrder: -1
   Sprite: {fileID: 212409535536248356}
+--- !u!114 &8346645428937644484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490220044263310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787adbe3232ded84a9544869399298f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetsMask:
+    serializedVersion: 2
+    m_Bits: 8192
+  ObstacleMask:
+    serializedVersion: 2
+    m_Bits: 256
+  ScanRadius: 15
+  LineOfFireBoxcastSize: {x: 0.1, y: 0.1}
+  DurationBetweenScans: 0.3
+  DetectionOriginOffset: {x: 0, y: 0, z: 0}
+  RotationMode: 0
+  ApplyAutoAimAsLastDirection: 1
+  MoveCameraTarget: 1
+  CameraTargetDistance: 0.5
+  CameraTargetMaxDistance: 10
+  CameraTargetSpeed: 5
+  AimMarkerPrefab: {fileID: 0}
+  DestroyAimMarkerOnWeaponDestroy: 1
+  FirstTargetFoundFeedback: {fileID: 0}
+  NewTargetFoundFeedback: {fileID: 0}
+  NoMoreTargetsFeedback: {fileID: 0}
+  Target: {fileID: 0}
+  DrawDebugRadius: 1
+  OverlapMaximum: 10
+--- !u!114 &6190251317876918626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490220044263310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8b1174ff4d3dcb4da6a6d4e0ae5bb77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DelayBeforeShootAfterAcquiringTarget: 0.3
 --- !u!1 &1806446063217534
 GameObject:
   m_ObjectHideFlags: 0
