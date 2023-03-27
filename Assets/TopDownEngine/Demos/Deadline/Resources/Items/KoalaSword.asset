@@ -32,7 +32,7 @@ MonoBehaviour:
     DisplayUseButton: 1
     DisplayUnequipButton: 1
   Quantity: 1
-  ItemName: Sword
+  ItemName: Energy Sword
   ShortDescription: Point pointy end towards the enemy
   Description: A heavy and sharp sword you grabbed from a tomb or something.
   Icon: {fileID: 21300016, guid: b528708a5a8f28343aefa9e1d46670a7, type: 3}

@@ -857,7 +857,6 @@ GameObject:
   - component: {fileID: 166735983916773864}
   - component: {fileID: 3999968105047152057}
   - component: {fileID: 9115651427120406436}
-  - component: {fileID: 4289095408237338840}
   m_Layer: 10
   m_Name: DeadlineNaomi1111
   m_TagString: Player
@@ -1006,7 +1005,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  FacingMode: 1
+  FacingMode: 0
   FacingBase: 1
   ModelShouldFlip: 1
   ModelFlipValueLeft: {x: -1, y: 1, z: 1}
@@ -1040,18 +1039,18 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  RotationMode: 1
+  RotationMode: 3
   ForcedRotation: 0
   ForcedRotationDirection: {x: 0, y: 0, z: 0}
   ShouldRotateToFaceMovementDirection: 1
   MovementRotationSpeed: 0
-  MovementRotatingModel: {fileID: 7288775375704870452}
+  MovementRotatingModel: {fileID: 7288775377022391242}
   RotateToFaceMovementDirectionSpeed: 10
   AbsoluteThresholdMovement: 0.5
   ModelDirection: {x: 0, y: 0, z: 0}
   ModelAngles: {x: 0, y: 0, z: 0}
-  ShouldRotateToFaceWeaponDirection: 1
-  WeaponRotationSpeed: 0
+  ShouldRotateToFaceWeaponDirection: 0
+  WeaponRotationSpeed: 1
   WeaponRotatingModel: {fileID: 7288775377022391242}
   RotateToFaceWeaponDirectionSpeed: 10
   AbsoluteThresholdWeapon: 0.5
@@ -1078,8 +1077,8 @@ MonoBehaviour:
   DashMode: 1
   DashSpace: 0
   DashDirection: {x: 0, y: 0, z: 1}
-  DashDistance: 6
-  DashDuration: 0.2
+  DashDistance: 8
+  DashDuration: 0.3
   DashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1121,7 +1120,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7288775375526055037}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c86c96e06d6ae44b822a6ab24e1b8fe, type: 3}
   m_Name: 
@@ -1163,11 +1162,11 @@ MonoBehaviour:
   InputAuthorized: 1
   AnalogInput: 0
   ScriptDrivenInput: 0
-  WalkSpeed: 8
+  WalkSpeed: 10
   ShouldSetMovement: 1
   IdleThreshold: 0.05
-  Acceleration: 60
-  Deceleration: 60
+  Acceleration: 30
+  Deceleration: 30
   InterpolateMovementSpeed: 0
   WalkParticles: []
   TouchTheGroundParticles: []
@@ -1336,7 +1335,7 @@ MonoBehaviour:
   UseSecondaryAxisThresholdToShoot: 0
   ForceWeaponAimControl: 0
   ForcedWeaponAimControl: 1
-  BufferInput: 0
+  BufferInput: 1
   NewInputExtendsBuffer: 0
   MaximumBufferDuration: 0.25
   RequiresPerfectTile: 0
@@ -1399,7 +1398,7 @@ MonoBehaviour:
   WeaponRotationMode: 0
   AutoPickItems: []
   AutoPickOnlyIfMainInventoryIsEmpty: 0
-  AutoEquipWeaponOnStart: {fileID: 11400000, guid: 60c60c2e6d0ea3b40bab98b631fdee5b,
+  AutoEquipWeaponOnStart: {fileID: 11400000, guid: 2291b70db5927194d8c90ca2403a143c,
     type: 2}
   AutoEquipOnlyIfMainInventoryIsEmpty: 1
   CharacterHandleWeapon: {fileID: 6687624427338930404}
@@ -1510,93 +1509,6 @@ PolygonCollider2D:
       - {x: 6.043601, y: 0.026636124}
       - {x: 6.562233, y: 0.0036470294}
   m_UseDelaunayMesh: 0
---- !u!60 &4289095408237338840
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7288775375526055037}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 5.7267714, y: 0.59384704}
-      - {x: 4.3756104, y: 0.95416427}
-      - {x: 2.8380299, y: 1.0466135}
-      - {x: 1.0572815, y: 1.1706781}
-      - {x: -0.061683655, y: 1.9407225}
-      - {x: 1.4735651, y: 2.0737636}
-      - {x: 1.4289856, y: 2.5182235}
-      - {x: -0.97512245, y: 2.7493596}
-      - {x: -1.7107391, y: 3.5130703}
-      - {x: -2.8779745, y: 3.3217561}
-      - {x: -2.8630352, y: 2.382046}
-      - {x: -2.7887678, y: 1.4228499}
-      - {x: -4.033642, y: 1.4853072}
-      - {x: -5.110488, y: 2.069726}
-      - {x: -5.7419205, y: 1.8214834}
-      - {x: -5.5544424, y: 1.2082708}
-      - {x: -6.2205553, y: 1.3055384}
-      - {x: -6.5269375, y: 1.0663223}
-      - {x: -6.5643454, y: -1.0642147}
-      - {x: -6.192565, y: -1.3938379}
-      - {x: -5.559573, y: -1.1715925}
-      - {x: -5.732317, y: -1.779741}
-      - {x: -5.170498, y: -2.1996117}
-      - {x: -3.782792, y: -1.4581263}
-      - {x: -2.8546572, y: -1.5973485}
-      - {x: -2.8889608, y: -3.4050858}
-      - {x: -1.6530991, y: -3.529222}
-      - {x: -0.82169056, y: -2.6375568}
-      - {x: 1.4145708, y: -2.5305617}
-      - {x: 1.4720821, y: -2.092861}
-      - {x: 0.025658607, y: -1.9294763}
-      - {x: 0.88023186, y: -1.2117505}
-      - {x: 3.3471632, y: -1.0791838}
-      - {x: 4.8077536, y: -0.86714745}
-      - {x: 6.1472464, y: -0.43323278}
-      - {x: 6.453638, y: -0.04167795}
-      - {x: 0.83976746, y: 1.2290273}
-      - {x: 0.6139659, y: 1.4732411}
-      - {x: 0.099294245, y: -1.9159838}
-      - {x: 0.6450392, y: -1.4006705}
-      - {x: 6.043601, y: 0.026636124}
-      - {x: 6.562233, y: 0.0036470294}
-  m_UseDelaunayMesh: 0
 --- !u!1 &7288775375599185159
 GameObject:
   m_ObjectHideFlags: 0
@@ -1621,7 +1533,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7288775375599185159}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.8, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

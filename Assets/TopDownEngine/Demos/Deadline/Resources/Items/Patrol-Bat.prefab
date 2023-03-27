@@ -776,7 +776,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5878995135329303043}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.625, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -866,7 +866,7 @@ Transform:
   - {fileID: 7256024747195390163}
   - {fileID: 654267493664998632}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6573979015700810797
 MonoBehaviour:
@@ -1186,14 +1186,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01754710d9f92ec4d9a21b81f5682667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Model: {fileID: 0}
+  Model: {fileID: 6532488531831204015}
   CurrentHealth: 0
   Invulnerable: 0
-  InitialHealth: 30
-  MaximumHealth: 30
+  InitialHealth: 100
+  MaximumHealth: 100
   ResetHealthOnEnable: 1
   ImmuneToDamage: 0
-  DamageMMFeedbacks: {fileID: 6393431315659352060}
+  DamageMMFeedbacks: {fileID: 0}
   FeedbackIsProportionalToDamage: 0
   PreventTakeSelfDamage: 0
   ImmuneToKnockback: 0
@@ -1586,12 +1586,13 @@ MonoBehaviour:
   FollowTargetMode: 2
   NestDrawnHealthBar: 0
   Billboard: 0
-  InstantiatedOnDeath: {fileID: 0}
+  InstantiatedOnDeath: {fileID: 7072446316865588663, guid: 61bdc2491b8e06241a097475c7578933,
+    type: 3}
   HealthBarOffset: {x: 0, y: 2.5, z: 0}
-  AlwaysVisible: 0
+  AlwaysVisible: 1
   DisplayDurationOnHit: 1
   HideBarAtZero: 1
-  HideBarAtZeroDelay: 0
+  HideBarAtZeroDelay: 0.1
 --- !u!114 &7039926349437403040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1649,7 +1650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: isAliveOrDead
-  TrueIfHealthIs: 0
+  TrueIfHealthIs: 1
   HealthValue: 1
   OnlyOnce: 0
 --- !u!114 &8911065541696038224
@@ -1685,7 +1686,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   ObstaclesDetectionDistance: 1
-  ObstaclesCheckFrequency: 0
+  ObstaclesCheckFrequency: 0.1
   MinimumRandomDirection: {x: -1, y: -1}
   MaximumRandomDirection: {x: 1, y: 1}
 --- !u!114 &8911065541104098419

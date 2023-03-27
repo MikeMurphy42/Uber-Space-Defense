@@ -5035,7 +5035,7 @@ Transform:
   - {fileID: 4921664011988614}
   - {fileID: 967536956088114629}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114317679573123918
 MonoBehaviour:
@@ -5053,9 +5053,9 @@ MonoBehaviour:
   WeaponCurrentlyActive: 1
   InputAuthorized: 1
   TriggerMode: 0
-  DelayBeforeUse: 1
+  DelayBeforeUse: 0.75
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 1
+  TimeBetweenUses: 0.75
   TimeBetweenUsesReleaseInterruption: 1
   UseBurstMode: 0
   BurstLength: 3
@@ -5105,7 +5105,7 @@ MonoBehaviour:
   InitializeOnStart: 1
   Interruptable: 0
   Flipped: 0
-  ProjectileSpawnOffset: {x: 1.8, y: -0.1, z: 0}
+  ProjectileSpawnOffset: {x: 0, y: 0, z: 0}
   DefaultProjectileDirection: {x: 0, y: 0, z: 1}
   ProjectilesPerShot: 1
   SpawnTransforms: []
@@ -5114,7 +5114,7 @@ MonoBehaviour:
   RotateWeaponOnSpread: 1
   RandomSpread: 1
   SpawnPosition: {x: -118.2, y: -0.1, z: 0}
-  ObjectPooler: {fileID: 0}
+  ObjectPooler: {fileID: 114137986743622244}
   SpawnFeedbacks: []
   TestShootButton: 0
 --- !u!114 &114137986743622244
@@ -5163,7 +5163,7 @@ MonoBehaviour:
   ReplaceMousePointer: 1
   MouseDeadZoneRadius: 0.5
   DisplayReticle: 1
-  MoveCameraTargetTowardsReticle: 1
+  MoveCameraTargetTowardsReticle: 0
   CameraTargetOffset: 0.3
   CameraTargetMaxDistance: 10
   CameraTargetSpeed: 100
@@ -5246,13 +5246,13 @@ MonoBehaviour:
   ObstacleMask:
     serializedVersion: 2
     m_Bits: 256
-  ScanRadius: 15
+  ScanRadius: 17
   LineOfFireBoxcastSize: {x: 0.1, y: 0.1}
   DurationBetweenScans: 0.3
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   RotationMode: 0
   ApplyAutoAimAsLastDirection: 1
-  MoveCameraTarget: 1
+  MoveCameraTarget: 0
   CameraTargetDistance: 0.5
   CameraTargetMaxDistance: 10
   CameraTargetSpeed: 5
@@ -5276,7 +5276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8b1174ff4d3dcb4da6a6d4e0ae5bb77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DelayBeforeShootAfterAcquiringTarget: 0.3
+  DelayBeforeShootAfterAcquiringTarget: 0.1
 --- !u!1 &1911284947604098
 GameObject:
   m_ObjectHideFlags: 0
@@ -20405,7 +20405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8fe7e41857f44348b52714b3238715c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Active: 1
+  Active: 0
   Label: Camera Shake
   Chance: 100
   Timing:

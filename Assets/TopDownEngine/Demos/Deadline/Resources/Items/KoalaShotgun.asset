@@ -42,7 +42,7 @@ MonoBehaviour:
   DropProperties:
     Shape: 0
     NormalToSpawnPlane: {x: 0, y: 1, z: 0}
-    MinimumSphereRadius: 1
+    MinimumSphereRadius: 2
     MaximumSphereRadius: 2
     MinimumCubeBaseSize: {x: 1, y: 1, z: 1}
     MaximumCubeBaseSize: {x: 2, y: 2, z: 2}
@@ -88,7 +88,7 @@ MonoBehaviour:
   MovedSound: {fileID: 0}
   DroppedSound: {fileID: 0}
   UseDefaultSoundsIfNull: 1
-  EquippableWeapon: {fileID: 114068047272519342, guid: cf0e5f55594b379408379784046c533c,
+  EquippableWeapon: {fileID: 114068047272519342, guid: bb62ce35a32632a429510e6cdb5bed89,
     type: 3}
   AutoEquipMode: 0
   HandleWeaponID: 1

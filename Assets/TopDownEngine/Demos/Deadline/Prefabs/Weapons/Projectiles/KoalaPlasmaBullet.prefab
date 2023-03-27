@@ -5152,20 +5152,20 @@ MonoBehaviour:
   TypedDamages: []
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
-  DamageCausedKnockbackDirection: 3
-  DamageCausedKnockbackForce: {x: 400, y: 0, z: 0}
+  DamageCausedKnockbackDirection: 2
+  DamageCausedKnockbackForce: {x: 0.1, y: 0.1, z: 0}
   InvincibilityDuration: 0.1
   RepeatDamageOverTime: 0
   AmountOfRepeats: 3
   DurationBetweenRepeats: 1
   DamageOverTimeInterruptible: 1
   RepeatedDamageType: {fileID: 0}
-  DamageTakenEveryTime: 1
-  DamageTakenDamageable: 1
-  DamageTakenNonDamageable: 1
-  DamageTakenKnockbackType: 0
+  DamageTakenEveryTime: 5
+  DamageTakenDamageable: 5
+  DamageTakenNonDamageable: 5
+  DamageTakenKnockbackType: 1
   DamageTakenKnockbackForce: {x: 0, y: 0, z: 0}
-  DamageTakenInvincibilityDuration: 0.5
+  DamageTakenInvincibilityDuration: 0.1
   HitDamageableFeedback: {fileID: 2291255228380466387}
   HitNonDamageableFeedback: {fileID: 4827701002235876084}
   HitAnythingFeedback: {fileID: 0}

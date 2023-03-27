@@ -4903,7 +4903,7 @@ MonoBehaviour:
   ExecuteOnDisable:
     m_PersistentCalls:
       m_Calls: []
-  LifeTime: 5
+  LifeTime: 0.5
 --- !u!114 &114887299929142138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4923,11 +4923,11 @@ MonoBehaviour:
   ExecuteOnDisable:
     m_PersistentCalls:
       m_Calls: []
-  LifeTime: 2
+  LifeTime: 0.5
   FaceDirection: 1
   FaceMovement: 0
   MovementVector: 0
-  Speed: 1500
+  Speed: 1200
   Acceleration: 0
   Direction: {x: -1, y: 0, z: 0}
   DirectionCanBeChangedBySpawner: 1
@@ -4958,7 +4958,7 @@ MonoBehaviour:
   FeedbackIsProportionalToDamage: 0
   PreventTakeSelfDamage: 0
   ImmuneToKnockback: 0
-  ImmuneToKnockbackIfZeroDamage: 0
+  ImmuneToKnockbackIfZeroDamage: 1
   KnockbackForceMultiplier: 1
   DestroyOnDeath: 1
   DelayBeforeDestruction: 0.2
@@ -4994,28 +4994,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TargetLayerMask:
     serializedVersion: 2
-    m_Bits: 8960
+    m_Bits: 8192
   Owner: {fileID: 0}
   TriggerFilter: 195
-  MinDamageCaused: 10
-  MaxDamageCaused: 10
+  MinDamageCaused: 110
+  MaxDamageCaused: 110
   TypedDamages: []
-  DamageDirectionMode: 1
+  DamageDirectionMode: 2
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 3
-  DamageCausedKnockbackForce: {x: 400, y: 0, z: 0}
-  InvincibilityDuration: 0.1
+  DamageCausedKnockbackForce: {x: 0.15, y: 0.15, z: 0}
+  InvincibilityDuration: 0.03
   RepeatDamageOverTime: 0
   AmountOfRepeats: 3
   DurationBetweenRepeats: 1
   DamageOverTimeInterruptible: 1
   RepeatedDamageType: {fileID: 0}
-  DamageTakenEveryTime: 1
-  DamageTakenDamageable: 1
-  DamageTakenNonDamageable: 1
-  DamageTakenKnockbackType: 0
+  DamageTakenEveryTime: 5
+  DamageTakenDamageable: 5
+  DamageTakenNonDamageable: 5
+  DamageTakenKnockbackType: 1
   DamageTakenKnockbackForce: {x: 0, y: 0, z: 0}
-  DamageTakenInvincibilityDuration: 0.5
+  DamageTakenInvincibilityDuration: 0.1
   HitDamageableFeedback: {fileID: 5190141371420526726}
   HitNonDamageableFeedback: {fileID: 8338939277010736459}
   HitAnythingFeedback: {fileID: 0}
@@ -5040,7 +5040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfdd322a582c3bc429d2350807e8a2c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mode: 1
+  Mode: 0
   ObstaclesLayerMask:
     serializedVersion: 2
     m_Bits: 8448

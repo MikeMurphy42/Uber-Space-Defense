@@ -37,11 +37,11 @@ MonoBehaviour:
   Description: Fully adjustable suppressor height sights, extended, threaded barrel
     with O-ring, and a match grade trigger with adjustable trigger stop.
   Icon: {fileID: 21300002, guid: febaf98c9e2e16b4693de2178a533b43, type: 3}
-  Prefab: {fileID: 1630057665610706, guid: 83a4c1367af8c664a9691801cd2a6ff8, type: 3}
+  Prefab: {fileID: 1490220044263310, guid: 027a63a96f809b443b1fec5f58ad432b, type: 3}
   DropProperties:
     Shape: 0
     NormalToSpawnPlane: {x: 0, y: 1, z: 0}
-    MinimumSphereRadius: 1
+    MinimumSphereRadius: 2
     MaximumSphereRadius: 2
     MinimumCubeBaseSize: {x: 1, y: 1, z: 1}
     MaximumCubeBaseSize: {x: 2, y: 2, z: 2}

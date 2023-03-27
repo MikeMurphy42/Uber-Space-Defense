@@ -110,21 +110,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/TopDownEngine/Demos/Deadline/Scenes/DeadlineLevel2.unity
     guid: 9983836d95660e440a9e968f4b926514
-  - enabled: 0
-    path: Assets/TopDownEngine/Demos/Deadline/Scenes/DeadlineLevel11.unity
-    guid: 85a874a8f26cd3d4baec82b1c6b092cd
-  - enabled: 0
-    path: Assets/TopDownEngine/Demos/Deadline/Scenes/DeadlineLevel2-1.unity
-    guid: 9ed52f4e58f30db4b93e7e865afff2ed
   - enabled: 1
-    path: Assets/TopDownEngine/Demos/Deadline/Scenes/DeadlineLevel3-1.unity
-    guid: f8c9ab9d5d7896b489327712a1f28d72
+    path: Assets/TopDownEngine/Demos/Deadline/Scenes/DeadlineLevel3.unity
+    guid: 02cf2258a4bb7034d96b3fa703f9cd6b
   - enabled: 1
-    path: Assets/TopDownEngine/Demos/Deadline/Scenes/DeadlineLevel4-1.unity
-    guid: 1936303b68c7c7b4ca4e719e34002c2f
+    path: Assets/TopDownEngine/Demos/Deadline/Scenes/DeadlineLevel4.unity
+    guid: 7b0932d660d04ef42b73eccb9ed9c1b1
   - enabled: 1
-    path: Assets/TopDownEngine/Demos/Deadline/Scenes/DeadlineLevel5-1.unity
-    guid: 419f3c530af0c354b8471ae280305a4a
+    path: Assets/TopDownEngine/Demos/Deadline/Scenes/DeadlineLevel5.unity
+    guid: e98ab5995242b26489a56787f6ac535d
   - enabled: 1
     path: Assets/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMSceneLoading/LoadingScreens/MMAdditiveLoadingScreen.unity
     guid: d89b77a7a68c1844280c6ff2e49f95b8
